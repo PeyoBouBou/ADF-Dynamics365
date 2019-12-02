@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DynamicsSource"
+						"type": "CommonDataServiceForAppsSource"
 					},
 					"sink": {
 						"type": "AzureSqlSink"
@@ -44,13 +44,23 @@
 									"name": "FirstName",
 									"type": "String"
 								}
+							},
+							{
+								"source": {
+									"name": "emailaddress1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Address",
+									"type": "String"
+								}
 							}
 						]
 					}
 				},
 				"inputs": [
 					{
-						"referenceName": "Sabatier_TSP_Contact",
+						"referenceName": "TSP_Sabatier_CDS_Contact",
 						"type": "DatasetReference"
 					}
 				],
