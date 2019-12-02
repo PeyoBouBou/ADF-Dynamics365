@@ -1,0 +1,15 @@
+{
+	"name": "TSP_Sabatier_CDS_Contact",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TSP_Sabatier_CDS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CommonDataServiceForAppsEntity",
+		"schema": [],
+		"typeProperties": {
+			"entityName": "contact"
+		}
+	}
+}
