@@ -1,0 +1,22 @@
+{
+	"name": "TSP_Sabatier",
+	"properties": {
+		"annotations": [],
+		"type": "Dynamics",
+		"typeProperties": {
+			"deploymentType": "Online",
+			"serviceUri": "https://sabatier.crm4.dynamics.com",
+			"authenticationType": "AADServicePrincipal",
+			"servicePrincipalCredentialType": "ServicePrincipalKey",
+			"servicePrincipalId": "ab038ae5-4ea2-494d-90d0-3cd008d3ea61",
+			"servicePrincipalCredential": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "PboAzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "ADF-BizApp"
+			}
+		}
+	}
+}
