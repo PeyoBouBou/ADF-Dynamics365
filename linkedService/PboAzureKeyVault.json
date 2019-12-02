@@ -1,0 +1,10 @@
+{
+	"name": "PboAzureKeyVault",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://Pbo-KeysVault.vault.azure.net/"
+		}
+	}
+}
