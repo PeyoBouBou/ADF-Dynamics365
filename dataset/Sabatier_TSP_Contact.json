@@ -1,0 +1,15 @@
+{
+	"name": "Sabatier_TSP_Contact",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TSP_Sabatier",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DynamicsEntity",
+		"schema": [],
+		"typeProperties": {
+			"entityName": "contact"
+		}
+	}
+}
