@@ -1,0 +1,27 @@
+{
+	"name": "IntegrationRuntime1",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "North Europe",
+				"nodeSize": "Standard_D4_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 4
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "data-srv-northeu-bizapp.database.windows.net",
+					"catalogAdminUserName": "igloo",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
