@@ -1,5 +1,5 @@
 {
-	"name": "Sabatier_TSP_Contact",
+	"name": "D365_Contact",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "TSP_Sabatier",
