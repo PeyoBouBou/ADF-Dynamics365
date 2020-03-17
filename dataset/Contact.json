@@ -1,0 +1,79 @@
+{
+	"name": "Contact",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CIAD Data",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Contact.txt"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ContactId",
+				"type": "String"
+			},
+			{
+				"name": "FirstName",
+				"type": "String"
+			},
+			{
+				"name": "LastName",
+				"type": "String"
+			},
+			{
+				"name": "FullName",
+				"type": "String"
+			},
+			{
+				"name": "DateOfBirth",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "EMail",
+				"type": "String"
+			},
+			{
+				"name": "Telephone",
+				"type": "String"
+			},
+			{
+				"name": "PostCode",
+				"type": "String"
+			},
+			{
+				"name": "StreetAddress",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "State",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "CreatedOn",
+				"type": "String"
+			}
+		]
+	}
+}
