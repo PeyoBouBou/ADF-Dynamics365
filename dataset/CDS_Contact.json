@@ -1,5 +1,5 @@
 {
-	"name": "TSP_Sabatier_CDS_Contact",
+	"name": "CDS_Contact",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "TSP_Sabatier_CDS",
