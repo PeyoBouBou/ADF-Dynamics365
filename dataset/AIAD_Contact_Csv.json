@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "Contact.txt"
+				"relativeUrl": "https://ciaddata.blob.core.windows.net/ciad-sample-data/Contact.txt"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
