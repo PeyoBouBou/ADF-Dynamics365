@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "/Contact.txt"
+				"relativeUrl": "/Contact.txtd"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
