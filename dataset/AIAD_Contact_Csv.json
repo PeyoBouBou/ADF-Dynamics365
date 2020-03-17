@@ -1,5 +1,5 @@
 {
-	"name": "Contact",
+	"name": "AIAD_Contact_Csv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "CIAD Data",
