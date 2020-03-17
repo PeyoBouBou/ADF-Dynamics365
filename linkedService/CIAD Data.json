@@ -4,8 +4,8 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://ciaddata.blob.core.windows.net/ciad-sample-data",
-			"enableServerCertificateValidation": true,
+			"url": "https://ciaddata.blob.core.windows.net/ciad-sample-data/",
+			"enableServerCertificateValidation": false,
 			"authenticationType": "Anonymous"
 		}
 	}
