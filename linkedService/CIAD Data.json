@@ -1,0 +1,12 @@
+{
+	"name": "CIAD Data",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://ciaddata.blob.core.windows.net/ciad-sample-data",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
