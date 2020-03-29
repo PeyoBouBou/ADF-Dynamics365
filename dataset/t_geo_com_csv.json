@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "t_geo_com_csv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "t_geo_com",
