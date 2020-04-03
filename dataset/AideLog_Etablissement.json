@@ -5,6 +5,9 @@
 			"referenceName": "AideLog",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "AideLog"
+		},
 		"annotations": [],
 		"type": "CommonDataServiceForAppsEntity",
 		"schema": [],
