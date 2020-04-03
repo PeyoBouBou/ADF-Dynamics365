@@ -1,0 +1,15 @@
+{
+	"name": "AideLog_Etablissement",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AideLog",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CommonDataServiceForAppsEntity",
+		"schema": [],
+		"typeProperties": {
+			"entityName": "account"
+		}
+	}
+}
