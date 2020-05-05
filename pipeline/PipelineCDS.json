@@ -33,7 +33,7 @@
 						"alternateKeyName": "bpi_interlocuteur_code_key"
 					},
 					"enableStaging": false,
-					"parallelCopies": 1,
+					"parallelCopies": 32,
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
