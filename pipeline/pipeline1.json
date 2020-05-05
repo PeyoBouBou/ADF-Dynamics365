@@ -76,6 +76,25 @@
 								"sink": {
 									"name": ""
 								}
+							},
+							{
+								"source": {
+									"name": "EMail",
+									"type": "String"
+								},
+								"sink": {
+									"name": "emailaddress1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Telephone",
+									"type": "String"
+								},
+								"sink": {
+									"name": ""
+								}
 							}
 						]
 					}
