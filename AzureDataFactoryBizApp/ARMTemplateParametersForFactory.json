@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "AzureDataFactoryBizApp"
+		},
+		"AideLog_password": {
+			"value": ""
+		},
+		"Data NorthEu BizApp_connectionString": {
+			"value": ""
+		},
+		"TSP_Sabatier_password": {
+			"value": ""
+		},
+		"TSP_Sabatier_CDS_password": {
+			"value": ""
+		},
+		"AideLog_properties_typeProperties_username": {
+			"value": "pbo@aidelog.fr"
+		},
+		"CIAD Data_properties_typeProperties_url": {
+			"value": "https://ciaddata.blob.core.windows.net/ciad-sample-data/"
+		},
+		"PboAzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://Pbo-KeysVault.vault.azure.net/"
+		},
+		"TSP_Sabatier_properties_typeProperties_username": {
+			"value": "pierre@dynamicsest.top"
+		},
+		"TSP_Sabatier_CDS_properties_typeProperties_username": {
+			"value": "pierre@dynamicsest.top"
+		},
+		"t_geo_com_properties_typeProperties_url": {
+			"value": "https://www.data.gouv.fr/fr/datasets/r/2648d606-504d-4e91-ac1f-d70c92adc039"
+		},
+		"IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"value": "data-srv-northeu-bizapp.database.windows.net"
+		},
+		"IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"value": "igloo"
+		},
+		"IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+			"value": ""
+		}
+	}
+}

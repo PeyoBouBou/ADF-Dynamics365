@@ -1,0 +1,132 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "AzureDataFactoryBizApp"
+		},
+		"AideLog_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AideLog'"
+		},
+		"Data NorthEu BizApp_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'Data NorthEu BizApp'"
+		},
+		"TSP_Sabatier_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'TSP_Sabatier'"
+		},
+		"TSP_Sabatier_CDS_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'TSP_Sabatier_CDS'"
+		},
+		"AideLog_properties_typeProperties_username": {
+			"type": "string",
+			"defaultValue": "pbo@aidelog.fr"
+		},
+		"CIAD Data_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://ciaddata.blob.core.windows.net/ciad-sample-data/"
+		},
+		"PboAzureKeyVault_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://Pbo-KeysVault.vault.azure.net/"
+		},
+		"TSP_Sabatier_properties_typeProperties_username": {
+			"type": "string",
+			"defaultValue": "pierre@dynamicsest.top"
+		},
+		"TSP_Sabatier_CDS_properties_typeProperties_username": {
+			"type": "string",
+			"defaultValue": "pierre@dynamicsest.top"
+		},
+		"t_geo_com_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://www.data.gouv.fr/fr/datasets/r/2648d606-504d-4e91-ac1f-d70c92adc039"
+		},
+		"IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"type": "string",
+			"defaultValue": "data-srv-northeu-bizapp.database.windows.net"
+		},
+		"IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"type": "string",
+			"defaultValue": "igloo"
+		},
+		"IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+			"type": "secureString"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AideLog_password": {
+						"value": "[parameters('AideLog_password')]"
+					},
+					"Data NorthEu BizApp_connectionString": {
+						"value": "[parameters('Data NorthEu BizApp_connectionString')]"
+					},
+					"TSP_Sabatier_password": {
+						"value": "[parameters('TSP_Sabatier_password')]"
+					},
+					"TSP_Sabatier_CDS_password": {
+						"value": "[parameters('TSP_Sabatier_CDS_password')]"
+					},
+					"AideLog_properties_typeProperties_username": {
+						"value": "[parameters('AideLog_properties_typeProperties_username')]"
+					},
+					"CIAD Data_properties_typeProperties_url": {
+						"value": "[parameters('CIAD Data_properties_typeProperties_url')]"
+					},
+					"PboAzureKeyVault_properties_typeProperties_baseUrl": {
+						"value": "[parameters('PboAzureKeyVault_properties_typeProperties_baseUrl')]"
+					},
+					"TSP_Sabatier_properties_typeProperties_username": {
+						"value": "[parameters('TSP_Sabatier_properties_typeProperties_username')]"
+					},
+					"TSP_Sabatier_CDS_properties_typeProperties_username": {
+						"value": "[parameters('TSP_Sabatier_CDS_properties_typeProperties_username')]"
+					},
+					"t_geo_com_properties_typeProperties_url": {
+						"value": "[parameters('t_geo_com_properties_typeProperties_url')]"
+					},
+					"IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+						"value": "[parameters('IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint')]"
+					},
+					"IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+						"value": "[parameters('IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName')]"
+					},
+					"IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+						"value": "[parameters('IntegrationRuntime1_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
