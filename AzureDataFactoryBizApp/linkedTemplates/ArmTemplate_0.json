@@ -478,8 +478,7 @@
 								"type": "CommonDataServiceForAppsSink",
 								"writeBatchSize": 10,
 								"writeBehavior": "upsert",
-								"ignoreNullValues": false,
-								"alternateKeyName": "bpi_interlocuteur_code_key"
+								"ignoreNullValues": false
 							},
 							"enableStaging": false,
 							"parallelCopies": 1,
