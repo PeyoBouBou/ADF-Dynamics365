@@ -1,0 +1,25 @@
+{
+	"name": "toto",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Book",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "fr/datasets/les-1000-titres-les-plus-reserves-dans-les-bibliotheques-de-pret-prs/"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			}
+		]
+	}
+}
