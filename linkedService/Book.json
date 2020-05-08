@@ -1,0 +1,12 @@
+{
+	"name": "Book",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://www.data.gouv.fr/fr/datasets/les-1000-titres-les-plus-reserves-dans-les-bibliotheques-de-pret-prs/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
